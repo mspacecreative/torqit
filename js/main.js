@@ -20,9 +20,11 @@
 		$(this).next().slideToggle();
 	});
 	
-	$('.anchor-menu a').click(function() {
-		$(this).parent().parent().slideToggle();
-	});
+	if (window.matchMedia("(max-width: 980px)").matches) {
+		$('.anchor-menu a').click(function() {
+			$(this).parent().parent().slideToggle();
+		});
+	}
 	
 	// CHANGE HEIGHT OF BADGE GRADIENT BACKGROUND
 	function changeGradientHeight() {
