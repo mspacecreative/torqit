@@ -92,7 +92,15 @@
 	// SPLASH / LANDING AREA HEIGHT CALCULATION
 	function oneThirdSplashHeight() {
 		var oneThirdSplashHeightCalc = $('.services');
-		oneThirdSplashHeightCalc.height($(window).height() / 3);
+		if (window.matchMedia("(max-width: 850px) and (orientation: landscape)").matches) {
+			oneThirdsplashHeightCalc.css('height', '100%');
+		}
+		else if (window.matchMedia("(min-width: 768px)").matches) {
+			oneThirdSplashHeightCalc.height($(window).height() / 3);
+		
+		} else {
+			oneThirdsplashHeightCalc.css('height', '100%');
+		}
 	}
 	// END SPLASH / LANDING AREA HEIGHT CALCULATION
 	

@@ -1788,6 +1788,10 @@ a.light {
 		margin-top: 25px;
 	}
 	
+	.services .table-cell .one_half {
+		padding-top: 0;
+	}
+	
 	.column-reverse {
 		flex-flow: column wrap;
 	}
