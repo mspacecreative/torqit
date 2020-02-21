@@ -1934,7 +1934,7 @@ a.light {
 	}
 	
 	.splash:before, .splash:after {
-		background-size: 180%;
+		background-size: 100%;
 	}
 	
 	.email-social ul {
