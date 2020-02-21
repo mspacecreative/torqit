@@ -833,6 +833,11 @@ h1, h2, h3, h4, h5, h6 {
 	width: 1.5em;
 }
 
+.float-img-right {
+	max-width: 180px;
+	float: right;
+}
+
 .white-text .line-rule-title:before {
 	background-color: #fff;
 }
@@ -1408,7 +1413,7 @@ a.light {
 	bottom: 0;
 	width: 25%;
 	background: #333 url(../img/textures/carbon_fibre.png) top left;
-	right: 0;
+	right: 2em;
 	text-align: center;
 	border-radius: 3px 3px 0 0;
 	padding-bottom: 15px;
