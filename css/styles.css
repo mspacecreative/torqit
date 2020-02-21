@@ -1590,7 +1590,7 @@ a.light {
 	}
 	
 	.splash {
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 	
 	.splash .one_half.last {
