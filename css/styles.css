@@ -1692,6 +1692,8 @@ a.light {
 		position: relative;
 		width: 250px;
 		margin-bottom: -50px;
+		right: auto;
+		left: 0;
 	}
 }
 
