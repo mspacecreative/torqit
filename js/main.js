@@ -170,7 +170,6 @@
 	$('.mobile-nav-button .hamburger').click(function() {
 		$(this).toggleClass('is-active');
 		$('.mobile-nav').slideToggle();
-		$('.anchor-menu-container').fadeToggle();
 	});
 	
 	$('.mobile-nav a').click(function() {
