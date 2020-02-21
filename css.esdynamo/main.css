@@ -1309,6 +1309,15 @@ a.light {
 		display: table;
 		height: 100%;
 	}
+	.splash {
+		overflow-x: hidden;
+	}
+	.splash .one_half.last {
+		position: absolute;
+		right: -100px;
+		width: 60%;
+		top: 150px;
+	}
 	.img-width-60 {
 		text-align: center;
 	}
