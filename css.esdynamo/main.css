@@ -1310,7 +1310,7 @@ a.light {
 		height: 100%;
 	}
 	.splash {
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 	.splash .one_half.last {
 		position: absolute;
