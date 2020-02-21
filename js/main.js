@@ -17,12 +17,22 @@
 	}
 	
 	$('.menu-toggle').click(function() {
-		$(this).next().slideToggle();
+		var mobileMenu = $('.anchor-menu');
+		mobileMenu.toggleClass('reveal');
+		
+		if ( mobileMenu.hasClass('reveal') ) {
+			mobileMenu.slideDown();
+			mobileMenu.prev().html('CLOSE');
+		} else {
+			mobileMenu.slideUp();
+			mobileMenu.prev().html('SERVICES NAVIGATION');
+		}
 	});
 	
 	if (window.matchMedia("(max-width: 980px)").matches) {
 		$('.anchor-menu a').click(function() {
-			$(this).parent().parent().slideToggle();
+			$(this).parent().parent().slideToggle().removeClass('reveal');
+			$(this).parent().parent().prev().html('SERVICES NAVIGATION');
 		});
 	}
 	
@@ -54,6 +64,12 @@
 		}
 		
 		sticktothetop();
+		
+		if ( $('.anchor-menu-container').hasClass('stick') ) {
+			$('body').addClass('hide');
+		} else {
+			$('body').removeClass('hide');
+		}
 	});
 	// END HEADER NAVIGATION ANIMATION
 	
@@ -129,6 +145,7 @@
 		splashHeight();
 		oneThirdSplashHeight();
 		// END SPLASH / LANDING AREA HEIGHT RENDERING
+		
 	});
 	// END DOCUMENT READY FUNCTIONS
 	

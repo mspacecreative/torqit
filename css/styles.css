@@ -426,6 +426,14 @@ header {
 	display: inline-block;
 }
 
+.perspective-right {
+	perspective: 900px;
+}
+
+.perspective-right img {
+	transform: rotateY(30deg);
+}
+
 .anchor-menu a {
 	color: #fff;
 	font-size: 16px;
@@ -439,8 +447,12 @@ header {
 header.scroll {
 	background-color: #fff;
 	transition: 0.25s ease-in-out;
-	box-shadow: 0px 3px 5px #999;
+	box-shadow: 0px 3px 5px #666;
 	padding: 10px 0;
+}
+
+.hide header.scroll {
+	box-shadow: none;
 }
 
 nav {
