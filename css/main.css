@@ -1612,7 +1612,7 @@ a.light {
 		width: 100%;
 	}
 	.splash:before, .splash:after {
-		background-size: 180%;
+		background-size: 100%;
 	}
 	.email-social ul {
 		margin-top: 15px;
