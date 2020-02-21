@@ -1580,6 +1580,9 @@ a.light {
 	.one_half img {
 		width: 50%;
 	}
+	.splash .one_half img {
+		width: 100%;
+	}
 }
 
 @media (max-width: 980px) and (orientation: portrait) {
@@ -1602,6 +1605,9 @@ a.light {
 	}
 	.one_half img {
 		width: 60%;
+	}
+	.splash .one_half img {
+		width: 100%;
 	}
 	.splash:before, .splash:after {
 		background-size: 180%;
